@@ -107,7 +107,7 @@ export default function Home() {
     //TIP : check /src/app/libs/runningPlans.js
 
     //check discount here
-    if (form.values.hasCoupon) price *= 0.7;
+    if (form.values.hasCoupon && form.values.coupon === "CMU2023") price *= 0.7;
 
     return price;
   };
